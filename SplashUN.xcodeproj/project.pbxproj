@@ -20,13 +20,16 @@
 		2F9D5FFB290A93F400EBC793 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D5FFA290A93F400EBC793 /* MainViewModel.swift */; };
 		2F9D6002290A948100EBC793 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D6001290A948100EBC793 /* APIKey.swift */; };
 		2F9D600C290A95F600EBC793 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2F9D600B290A95F600EBC793 /* .gitignore */; };
-		2F9D600E290A96F700EBC793 /* APIServeice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D600D290A96F700EBC793 /* APIServeice.swift */; };
+		2F9D600E290A96F700EBC793 /* SearchPhotoAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D600D290A96F700EBC793 /* SearchPhotoAPIManager.swift */; };
 		2F9D6010290A973900EBC793 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D600F290A973900EBC793 /* BaseViewController.swift */; };
 		2F9D6012290A975000EBC793 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D6011290A975000EBC793 /* BaseView.swift */; };
 		2F9D6014290A982D00EBC793 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D6013290A982D00EBC793 /* MainView.swift */; };
 		2F9D601C290A9A1300EBC793 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D601B290A9A1300EBC793 /* SearchViewModel.swift */; };
 		2F9D601E290A9A2400EBC793 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D601D290A9A2400EBC793 /* SearchView.swift */; };
 		2F9D6020290A9A3200EBC793 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D601F290A9A3200EBC793 /* SearchViewController.swift */; };
+		2FC6BCAF290ADC290036CF43 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6BCAE290ADC290036CF43 /* MyCollectionViewCell.swift */; };
+		2FC6BCB1290ADC5F0036CF43 /* MyTableViewCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6BCB0290ADC5F0036CF43 /* MyTableViewCellTwo.swift */; };
+		2FC6BCB8290BC2DD0036CF43 /* CObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6BCB7290BC2DD0036CF43 /* CObservable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,13 +45,16 @@
 		2F9D5FFA290A93F400EBC793 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		2F9D6001290A948100EBC793 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		2F9D600B290A95F600EBC793 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		2F9D600D290A96F700EBC793 /* APIServeice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServeice.swift; sourceTree = "<group>"; };
+		2F9D600D290A96F700EBC793 /* SearchPhotoAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotoAPIManager.swift; sourceTree = "<group>"; };
 		2F9D600F290A973900EBC793 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2F9D6011290A975000EBC793 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		2F9D6013290A982D00EBC793 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2F9D601B290A9A1300EBC793 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		2F9D601D290A9A2400EBC793 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		2F9D601F290A9A3200EBC793 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2FC6BCAE290ADC290036CF43 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		2FC6BCB0290ADC5F0036CF43 /* MyTableViewCellTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCellTwo.swift; sourceTree = "<group>"; };
+		2FC6BCB7290BC2DD0036CF43 /* CObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CObservable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +193,7 @@
 		2F9D5FF8290A903A00EBC793 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				2FC6BCB7290BC2DD0036CF43 /* CObservable.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -218,7 +225,7 @@
 		2F9D5FFF290A946000EBC793 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
-				2F9D600D290A96F700EBC793 /* APIServeice.swift */,
+				2F9D600D290A96F700EBC793 /* SearchPhotoAPIManager.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -244,8 +251,9 @@
 		2F9D6019290A99CD00EBC793 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2FC6BCB6290AEC3C0036CF43 /* Controller */,
+				2FC6BCAB290ADBF00036CF43 /* Cell */,
 				2F9D601D290A9A2400EBC793 /* SearchView.swift */,
-				2F9D601F290A9A3200EBC793 /* SearchViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,6 +264,39 @@
 				2F9D601B290A9A1300EBC793 /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2FC6BCAB290ADBF00036CF43 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2FC6BCAD290ADC050036CF43 /* CollectionCell */,
+				2FC6BCAC290ADBFC0036CF43 /* TableCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2FC6BCAC290ADBFC0036CF43 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				2FC6BCB0290ADC5F0036CF43 /* MyTableViewCellTwo.swift */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		2FC6BCAD290ADC050036CF43 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				2FC6BCAE290ADC290036CF43 /* MyCollectionViewCell.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		2FC6BCB6290AEC3C0036CF43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F9D601F290A9A3200EBC793 /* SearchViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,11 +383,14 @@
 			files = (
 				2F566227290AA7A7005F9D50 /* SearchModel.swift in Sources */,
 				2F9D5FD8290A8ED400EBC793 /* AppDelegate.swift in Sources */,
+				2FC6BCB1290ADC5F0036CF43 /* MyTableViewCellTwo.swift in Sources */,
 				2F9D6014290A982D00EBC793 /* MainView.swift in Sources */,
+				2FC6BCB8290BC2DD0036CF43 /* CObservable.swift in Sources */,
 				2F9D5FDA290A8ED400EBC793 /* SceneDelegate.swift in Sources */,
 				2F9D5FF2290A8F8500EBC793 /* MainViewController.swift in Sources */,
 				2F9D5FFB290A93F400EBC793 /* MainViewModel.swift in Sources */,
-				2F9D600E290A96F700EBC793 /* APIServeice.swift in Sources */,
+				2FC6BCAF290ADC290036CF43 /* MyCollectionViewCell.swift in Sources */,
+				2F9D600E290A96F700EBC793 /* SearchPhotoAPIManager.swift in Sources */,
 				2F9D6020290A9A3200EBC793 /* SearchViewController.swift in Sources */,
 				2F9D601C290A9A1300EBC793 /* SearchViewModel.swift in Sources */,
 				2F9D6010290A973900EBC793 /* BaseViewController.swift in Sources */,
