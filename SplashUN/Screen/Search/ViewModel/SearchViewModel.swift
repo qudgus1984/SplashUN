@@ -5,16 +5,33 @@
 //  Created by 이병현 on 2022/10/27.
 //
 
-final class SearchPhotoViewModel {
+import Foundation
+import RxSwift
+
+enum SearchError: Error {
+    case nophoto
+    case serverError
+}
+
+class DiffableViewModel {
     
-    var list: CObservable<[Photo]> = CObservable([])
+//    var photoList: CObservable<SearchPhoto> = CObservable(SearchPhoto(total: 0, totalPages: 0, results: []))
+    var photoList = PublishSubject<SearchPhoto>()
     
-    func requestPhotoList(_ query: String) {
-        SearchPhotoAPIManager.shared.fetchPhotoList(query) { [weak self] value, statusCode, error in
-            guard let self = self else { return }
-            guard let value = value else { return }
+    func requestSearchPhoto(query: String) {
+        APIService.searchPhoto(query: query) { [weak self] photo, statusCode, error in
             
-            self.list.value = value.results
+            guard let statusCode = statusCode, statusCode == 200 else {
+                self?.photoList.onError(SearchError.serverError)
+                return
+            }
+            
+            guard let photo = photo else {
+                self?.photoList.onError(SearchError.nophoto)
+                return
+            }
+//            self.photoList.value = photo
+            self?.photoList.onNext(photo)
         }
     }
 }

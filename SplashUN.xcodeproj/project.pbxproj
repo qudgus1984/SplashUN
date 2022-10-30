@@ -27,9 +27,13 @@
 		2F9D601C290A9A1300EBC793 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D601B290A9A1300EBC793 /* SearchViewModel.swift */; };
 		2F9D601E290A9A2400EBC793 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D601D290A9A2400EBC793 /* SearchView.swift */; };
 		2F9D6020290A9A3200EBC793 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D601F290A9A3200EBC793 /* SearchViewController.swift */; };
-		2FC6BCAF290ADC290036CF43 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6BCAE290ADC290036CF43 /* MyCollectionViewCell.swift */; };
-		2FC6BCB1290ADC5F0036CF43 /* MyTableViewCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6BCB0290ADC5F0036CF43 /* MyTableViewCellTwo.swift */; };
+		2FC6BCAF290ADC290036CF43 /* SearchFirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6BCAE290ADC290036CF43 /* SearchFirstCollectionViewCell.swift */; };
 		2FC6BCB8290BC2DD0036CF43 /* CObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6BCB7290BC2DD0036CF43 /* CObservable.swift */; };
+		2FC6BCBB290E4E740036CF43 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC6BCBA290E4E740036CF43 /* RxCocoa */; };
+		2FC6BCBD290E4E740036CF43 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC6BCBC290E4E740036CF43 /* RxSwift */; };
+		2FC6BCC0290E4FA00036CF43 /* SearchFirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6BCBF290E4FA00036CF43 /* SearchFirstTableViewCell.swift */; };
+		2FC6BCC2290E50380036CF43 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6BCC1290E50380036CF43 /* BaseTableViewCell.swift */; };
+		2FC6BCC4290E54540036CF43 /* BaseCollectionVeiwCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6BCC3290E54540036CF43 /* BaseCollectionVeiwCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,9 +56,11 @@
 		2F9D601B290A9A1300EBC793 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		2F9D601D290A9A2400EBC793 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		2F9D601F290A9A3200EBC793 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		2FC6BCAE290ADC290036CF43 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
-		2FC6BCB0290ADC5F0036CF43 /* MyTableViewCellTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCellTwo.swift; sourceTree = "<group>"; };
+		2FC6BCAE290ADC290036CF43 /* SearchFirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFirstCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FC6BCB7290BC2DD0036CF43 /* CObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CObservable.swift; sourceTree = "<group>"; };
+		2FC6BCBF290E4FA00036CF43 /* SearchFirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFirstTableViewCell.swift; sourceTree = "<group>"; };
+		2FC6BCC1290E50380036CF43 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		2FC6BCC3290E54540036CF43 /* BaseCollectionVeiwCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionVeiwCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,8 @@
 			files = (
 				2F566221290AA4DE005F9D50 /* Alamofire in Frameworks */,
 				2F56622B290AB1E6005F9D50 /* Then in Frameworks */,
+				2FC6BCBD290E4E740036CF43 /* RxSwift in Frameworks */,
+				2FC6BCBB290E4E740036CF43 /* RxCocoa in Frameworks */,
 				2F566224290AA4E9005F9D50 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +177,8 @@
 			children = (
 				2F9D600F290A973900EBC793 /* BaseViewController.swift */,
 				2F9D6011290A975000EBC793 /* BaseView.swift */,
+				2FC6BCC1290E50380036CF43 /* BaseTableViewCell.swift */,
+				2FC6BCC3290E54540036CF43 /* BaseCollectionVeiwCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -251,9 +261,9 @@
 		2F9D6019290A99CD00EBC793 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2FC6BCBE290E4F870036CF43 /* View */,
 				2FC6BCB6290AEC3C0036CF43 /* Controller */,
 				2FC6BCAB290ADBF00036CF43 /* Cell */,
-				2F9D601D290A9A2400EBC793 /* SearchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,7 +288,7 @@
 		2FC6BCAC290ADBFC0036CF43 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
-				2FC6BCB0290ADC5F0036CF43 /* MyTableViewCellTwo.swift */,
+				2FC6BCBF290E4FA00036CF43 /* SearchFirstTableViewCell.swift */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
@@ -286,7 +296,7 @@
 		2FC6BCAD290ADC050036CF43 /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
-				2FC6BCAE290ADC290036CF43 /* MyCollectionViewCell.swift */,
+				2FC6BCAE290ADC290036CF43 /* SearchFirstCollectionViewCell.swift */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -297,6 +307,14 @@
 				2F9D601F290A9A3200EBC793 /* SearchViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FC6BCBE290E4F870036CF43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F9D601D290A9A2400EBC793 /* SearchView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +337,8 @@
 				2F566220290AA4DE005F9D50 /* Alamofire */,
 				2F566223290AA4E9005F9D50 /* SnapKit */,
 				2F56622A290AB1E6005F9D50 /* Then */,
+				2FC6BCBA290E4E740036CF43 /* RxCocoa */,
+				2FC6BCBC290E4E740036CF43 /* RxSwift */,
 			);
 			productName = SplashUN;
 			productReference = 2F9D5FD4290A8ED400EBC793 /* SplashUN.app */;
@@ -352,6 +372,7 @@
 				2F56621F290AA4DE005F9D50 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				2F566222290AA4E9005F9D50 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				2F566229290AB1E6005F9D50 /* XCRemoteSwiftPackageReference "Then" */,
+				2FC6BCB9290E4E740036CF43 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 2F9D5FD5290A8ED400EBC793 /* Products */;
 			projectDirPath = "";
@@ -383,16 +404,18 @@
 			files = (
 				2F566227290AA7A7005F9D50 /* SearchModel.swift in Sources */,
 				2F9D5FD8290A8ED400EBC793 /* AppDelegate.swift in Sources */,
-				2FC6BCB1290ADC5F0036CF43 /* MyTableViewCellTwo.swift in Sources */,
 				2F9D6014290A982D00EBC793 /* MainView.swift in Sources */,
 				2FC6BCB8290BC2DD0036CF43 /* CObservable.swift in Sources */,
 				2F9D5FDA290A8ED400EBC793 /* SceneDelegate.swift in Sources */,
 				2F9D5FF2290A8F8500EBC793 /* MainViewController.swift in Sources */,
 				2F9D5FFB290A93F400EBC793 /* MainViewModel.swift in Sources */,
-				2FC6BCAF290ADC290036CF43 /* MyCollectionViewCell.swift in Sources */,
+				2FC6BCC2290E50380036CF43 /* BaseTableViewCell.swift in Sources */,
+				2FC6BCC0290E4FA00036CF43 /* SearchFirstTableViewCell.swift in Sources */,
+				2FC6BCAF290ADC290036CF43 /* SearchFirstCollectionViewCell.swift in Sources */,
 				2F9D600E290A96F700EBC793 /* SearchPhotoAPIManager.swift in Sources */,
 				2F9D6020290A9A3200EBC793 /* SearchViewController.swift in Sources */,
 				2F9D601C290A9A1300EBC793 /* SearchViewModel.swift in Sources */,
+				2FC6BCC4290E54540036CF43 /* BaseCollectionVeiwCell.swift in Sources */,
 				2F9D6010290A973900EBC793 /* BaseViewController.swift in Sources */,
 				2F9D6002290A948100EBC793 /* APIKey.swift in Sources */,
 				2F9D6012290A975000EBC793 /* BaseView.swift in Sources */,
@@ -640,6 +663,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		2FC6BCB9290E4E740036CF43 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -657,6 +688,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2F566229290AB1E6005F9D50 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		2FC6BCBA290E4E740036CF43 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FC6BCB9290E4E740036CF43 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		2FC6BCBC290E4E740036CF43 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FC6BCB9290E4E740036CF43 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
